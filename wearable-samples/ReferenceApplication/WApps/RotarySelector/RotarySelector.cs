@@ -107,6 +107,7 @@ namespace NUIWHome
             {
                 SetEditMode();
             }
+            FocusManager.Instance.SetCurrentFocusView(this);
         }
 
         public List<RotarySelectorItem> GetRotarySelectorItems()
