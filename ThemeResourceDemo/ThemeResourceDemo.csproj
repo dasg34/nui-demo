@@ -1,0 +1,44 @@
+﻿<Project Sdk="Tizen.NET.Sdk/1.0.9">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugType>portable</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>None</DebugType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="MyTheme.xaml" />
+    <None Remove="res\MyThemeResourceDark.xaml" />
+    <None Remove="res\MyThemeResourceDefault.xaml" />
+    <None Remove="res\TestXaml.xaml" />
+  </ItemGroup>
+  
+    <ItemGroup>
+    <EmbeddedResource Include="res\MyThemeResourceDark.xaml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="res\MyThemeResourceDefault.xaml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="res\MyTheme.xaml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  
+    <ItemGroup>
+      <ProjectReference Include="..\..\..\source\repos\TizenFX\src\Tizen.NUI.Components\Tizen.NUI.Components.csproj" />
+    </ItemGroup>
+
+</Project>

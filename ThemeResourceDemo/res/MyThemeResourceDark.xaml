@@ -1,0 +1,17 @@
+﻿<ResourceDictionary
+      xmlns="http://tizen.org/Tizen.NUI/2018/XAML"
+      xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <Color x:Key="ButtonBackgroundColorNormal">0.309, 0.309, 0.309,1</Color>
+    <Color x:Key="ButtonBackgroundColorPressed">0.631,0.631,0.631,1</Color>
+    <Color x:Key="ButtonBackgroundColorDisabled">0.8,0.8,0.8,1</Color>
+    <Color x:Key="ButtonTextColorNormal">1,1,1,1</Color>
+    <Color x:Key="ButtonTextColorPressed">0.921, 0.921, 0.921, 1</Color>
+    <Color x:Key="ButtonTextColorDisabled">0.66, 0.66, 0.66, 1</Color>
+    <ApplicationResourcePath x:Key="CheckBoxBackgroundImagePressed">nui_component_default_checkbox_bg_p_dark.png</ApplicationResourcePath>
+    <ApplicationResourcePath x:Key="CheckBoxBackgroundImageNormal">nui_component_default_checkbox_bg_n_dark.png</ApplicationResourcePath>
+    <ApplicationResourcePath x:Key="CheckBoxImage">nui_component_default_checkbox_s.png</ApplicationResourcePath>
+    <ApplicationResourcePath x:Key="SwitchTrackImageSelected">nui_component_default_switch_track_s_dark.png</ApplicationResourcePath>
+    <ApplicationResourcePath x:Key="RadioButtonBackgroundImagePressed">nui_component_default_radiobutton_p_dark.png</ApplicationResourcePath>
+    <ApplicationResourcePath x:Key="RadioButtonBackgroundImageSelected">nui_component_default_radiobutton_s_dark.png</ApplicationResourcePath>
+</ResourceDictionary>
